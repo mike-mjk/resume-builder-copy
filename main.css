@@ -41,3 +41,20 @@
   margin-left: 10px;
   font-weight: bolder;
 }
+
+@media (max-width: 600px) {
+  .nav-right .nav-link {
+    margin-left: 0;
+    font-size: 16px;
+    margin-right: 5px;
+  }
+
+  .nav-logo svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .nav-logo__title {
+    display: none;
+  }
+}
