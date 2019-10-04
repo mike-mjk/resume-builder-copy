@@ -114,6 +114,16 @@
   transform: translate3d(110%, 40%, 0);
 }
 
+.main-paper {
+  width: 550px;
+  height: 700px;
+  background: #fff;
+  position: absolute;
+  box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.1),
+    7px 5px 10px rgba(0, 0, 0, 0.06);
+  transform: rotate(11deg) translate3d(30%, -10%, 0);
+}
+
 @media (max-width: 600px) {
   .nav-right .nav-link {
     margin-left: 0;
