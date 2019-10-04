@@ -14,6 +14,8 @@
 
 .nav {
   display: flex;
+  max-width: 1280px;
+  margin: auto;
   justify-content: space-between;
   align-items: center;
   padding: 20px 12.5px 20px 20px;
@@ -42,6 +44,44 @@
   font-weight: bolder;
 }
 
+.hero {
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: var(--bigfont);
+  font-weight: bolder;
+}
+
+.hero p {
+  font-size: var(--smallfont);
+  line-height: 1.45;
+  margin: 20px 0;
+}
+
+.hero h1,
+.hero p {
+  max-width: 350px;
+}
+
+.cta {
+  padding: 20px;
+  background: #000;
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: var(--thinfont);
+  font-size: var(--smallfont);
+  transition: all 0.15s ease-in-out;
+}
+
+.cta:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.8);
+}
 @media (max-width: 600px) {
   .nav-right .nav-link {
     margin-left: 0;
