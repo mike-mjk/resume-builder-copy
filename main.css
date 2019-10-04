@@ -78,6 +78,13 @@
   transition: all 0.15s ease-in-out;
 }
 
+.cta:after {
+  content: "\A0\2192";
+  position: relative;
+  margin-left: 10px;
+  top: -2px;
+}
+
 .cta:hover {
   cursor: pointer;
   background: rgba(0, 0, 0, 0.8);
