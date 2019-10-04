@@ -82,6 +82,31 @@
   cursor: pointer;
   background: rgba(0, 0, 0, 0.8);
 }
+
+.circle {
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  filter: blur(40px);
+  opacity: 0.6;
+  position: absolute;
+}
+
+.circle1 {
+  background: #e9ff00;
+  transform: translate3d(10%, 50%, 0);
+}
+
+.circle2 {
+  background: #00ffc5;
+  transform: translate3d(80%, -10%, 0);
+}
+
+.circle3 {
+  background: #0091ff;
+  transform: translate3d(110%, 40%, 0);
+}
+
 @media (max-width: 600px) {
   .nav-right .nav-link {
     margin-left: 0;
