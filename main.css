@@ -44,6 +44,11 @@
   font-weight: bolder;
 }
 
+.hiddenhero {
+  position: relative;
+  overflow: hidden;
+}
+
 .hero {
   max-width: 1280px;
   margin: auto;
@@ -119,12 +124,97 @@
   height: 700px;
   background: #fff;
   position: absolute;
+}
+
+.main-paper1 {
   box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.1),
     7px 5px 10px rgba(0, 0, 0, 0.06);
   transform: rotate(11deg) translate3d(30%, -10%, 0);
 }
 
+.main-paper2 {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.06);
+  transform: rotate(9deg) translate3d(30%, -10%, 0);
+}
+
+.main-paper3 {
+  transform: rotate(7deg) translate3d(30%, -10%, 0);
+  padding: 10px;
+}
+
+.paper {
+  padding: 30px 20px 20px;
+  user-select: none;
+}
+
+.paper-col {
+  padding: 0 0 30px;
+  margin: 0 0 20px;
+  border-bottom: 1px solid #000;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #494949;
+  line-height: 1.45;
+  font-size: 10px;
+  font-weight: var(--thinfont);
+}
+
+.paper-title {
+  font-size: 16px;
+  color: #000;
+}
+
+.paper-title h4 {
+  font-size: 10px;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.paper-right {
+  width: 66.66%;
+}
+
+.bold {
+  font-weight: 500;
+  color: #000;
+}
+
+.push {
+  margin-top: 15px;
+}
+
+@media (max-width: 945px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero > div {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .hero h1 {
+    max-width: 100%;
+  }
+
+  .hero p {
+    margin: 20px auto;
+    max-width: 550px;
+  }
+
+  .hero figure {
+    height: 300px;
+    transform: translate3d(-70px, 30px, 0) scale(0.9);
+  }
+}
 @media (max-width: 600px) {
+  :root {
+    --bigfont: 42px;
+    --smallfont: 16px;
+  }
   .nav-right .nav-link {
     margin-left: 0;
     font-size: 16px;
@@ -138,5 +228,14 @@
 
   .nav-logo__title {
     display: none;
+  }
+
+  .hero {
+    padding: 40px 20px;
+  }
+
+  .hero figure {
+    height: 210px;
+    transform: translate3d(-140px, 40px, 0) scale(0.6);
   }
 }
