@@ -234,6 +234,10 @@
     padding: 40px 20px;
   }
 
+  .hero > div {
+    margin-bottom: 20px;
+  }
+
   .hero figure {
     height: 210px;
     transform: translate3d(-140px, 40px, 0) scale(0.6);
