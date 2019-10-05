@@ -186,6 +186,71 @@
   margin-top: 15px;
 }
 
+section {
+  max-width: 1280px;
+  padding: 20px;
+  margin: auto;
+}
+
+span.coming-soon {
+  opacity: 0.3;
+  font-weight: bold;
+  font-size: 14px;
+}
+.whitebg {
+  position: relative;
+  background: #fff;
+  padding-top: 100px;
+}
+
+.flex {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.flex__spread {
+  justify-content: space-between;
+}
+
+.col-left {
+  width: 33.33%;
+}
+
+.col-right {
+  width: 66.66%;
+}
+
+.flex .col-left h6 {
+  display: inline-block;
+  transform: rotate(-90deg) translate3d(-100%, 0, 0);
+  white-space: nowrap;
+  transform-origin: left top;
+  font-size: var(--bigfont);
+  font-weight: bolder;
+}
+
+.item {
+  width: calc(33.33% - 40px);
+  margin-bottom: 50px;
+  font-size: var(--smallfont);
+}
+
+.item svg {
+  width: 50px;
+  height: 50px;
+}
+
+.item h5 {
+  margin-top: 20px;
+  width: 100%;
+  font-size: var(--smallfont);
+}
+
+.item p {
+  line-height: 1.45;
+  margin-top: 15px;
+}
+
 @media (max-width: 945px) {
   .hero {
     flex-direction: column;
